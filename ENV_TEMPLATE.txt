@@ -1,0 +1,44 @@
+# Copy this file to server/.env and fill in your values
+
+# Server Configuration
+PORT=5000
+NODE_ENV=development
+
+# MongoDB
+MONGODB_URI=mongodb://localhost:27017/ai-media-generator
+# Or for MongoDB Atlas:
+# MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/ai-media-generator
+
+# JWT Secret (generate a random string)
+JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
+
+# Frontend URL
+FRONTEND_URL=http://localhost:3000
+
+# OpenAI API (for DALL·E and TTS)
+OPENAI_API_KEY=your-openai-api-key
+
+# Stability AI (for Stable Diffusion)
+STABILITY_API_KEY=your-stability-api-key
+
+# ElevenLabs API (for Voice Generation)
+ELEVENLABS_API_KEY=your-elevenlabs-api-key
+
+# Runway API (for Video Generation)
+RUNWAY_API_KEY=your-runway-api-key
+
+# Pika API (for Video Generation)
+PIKA_API_KEY=your-pika-api-key
+
+# Google OAuth (Optional)
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+
+# File Storage (local or cloud)
+STORAGE_TYPE=local
+# For cloud storage (AWS S3, Cloudinary, etc.)
+# AWS_ACCESS_KEY_ID=your-aws-access-key
+# AWS_SECRET_ACCESS_KEY=your-aws-secret-key
+# AWS_BUCKET_NAME=your-bucket-name
+
+

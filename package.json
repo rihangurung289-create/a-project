@@ -1,0 +1,19 @@
+{
+  "name": "ai-media-generator",
+  "version": "1.0.0",
+  "description": "AI-powered web application for generating images, videos, and audio",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "keywords": ["ai", "image-generation", "video-generation", "audio-generation"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
