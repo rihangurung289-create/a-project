@@ -68,7 +68,7 @@ export default function GenerateImagePage() {
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
                 placeholder="A beautiful sunset over the ocean..."
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 rows={4}
                 required
               />
@@ -81,7 +81,7 @@ export default function GenerateImagePage() {
               <select
                 value={style}
                 onChange={(e) => setStyle(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               >
                 <option value="realistic">Realistic</option>
                 <option value="cinematic">Cinematic</option>
@@ -98,7 +98,7 @@ export default function GenerateImagePage() {
               <select
                 value={resolution}
                 onChange={(e) => setResolution(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               >
                 <option value="1024x1024">1024x1024</option>
                 <option value="512x512">512x512</option>
@@ -113,7 +113,7 @@ export default function GenerateImagePage() {
               <select
                 value={model}
                 onChange={(e) => setModel(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               >
                 <option value="stable-diffusion">Stable Diffusion</option>
                 <option value="dalle">DALL·E 3</option>
@@ -192,5 +192,6 @@ export default function GenerateImagePage() {
     </div>
   )
 }
+
 
 

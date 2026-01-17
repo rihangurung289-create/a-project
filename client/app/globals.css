@@ -16,6 +16,18 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,6 +36,52 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/* Form input base styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  transition: all 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+/* Button base styles */
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* Link base styles */
+a {
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+/* Dark mode scrollbar */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #4b5563;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
 }
 
 @layer utilities {
@@ -35,6 +93,7 @@ body {
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -49,5 +108,37 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+/* Loading spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Smooth transitions for dark mode */
+* {
+  transition-property: background-color, border-color, color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Image and media responsive */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Focus visible styles for accessibility */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
 
 

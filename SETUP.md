@@ -198,3 +198,4 @@ ai-media-generator/
 - Review error messages in browser console and server logs
 
 
+
