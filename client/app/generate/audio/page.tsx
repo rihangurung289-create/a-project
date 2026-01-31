@@ -111,8 +111,8 @@ export default function GenerateAudioPage() {
       <div className="flex space-x-4 mb-8">
         <button
           onClick={() => setAudioType('tts')}
-          className={`px-6 py-3 rounded-lg ${
-            audioType === 'tts' ? 'bg-blue-600 text-white' : 'bg-gray-200'
+          className={`px-6 py-3 rounded-lg transition-colors ${
+            audioType === 'tts' ? 'bg-blue-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white'
           }`}
         >
           <Volume2 className="w-5 h-5 inline mr-2" />
@@ -120,8 +120,8 @@ export default function GenerateAudioPage() {
         </button>
         <button
           onClick={() => setAudioType('music')}
-          className={`px-6 py-3 rounded-lg ${
-            audioType === 'music' ? 'bg-blue-600 text-white' : 'bg-gray-200'
+          className={`px-6 py-3 rounded-lg transition-colors ${
+            audioType === 'music' ? 'bg-blue-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white'
           }`}
         >
           <Music className="w-5 h-5 inline mr-2" />
@@ -129,8 +129,8 @@ export default function GenerateAudioPage() {
         </button>
         <button
           onClick={() => setAudioType('sound-effect')}
-          className={`px-6 py-3 rounded-lg ${
-            audioType === 'sound-effect' ? 'bg-blue-600 text-white' : 'bg-gray-200'
+          className={`px-6 py-3 rounded-lg transition-colors ${
+            audioType === 'sound-effect' ? 'bg-blue-600 text-white' : 'bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white'
           }`}
         >
           <Zap className="w-5 h-5 inline mr-2" />
@@ -151,7 +151,7 @@ export default function GenerateAudioPage() {
                   value={text}
                   onChange={(e) => setText(e.target.value)}
                   placeholder="Enter text to convert to speech..."
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   rows={6}
                   required
                 />
@@ -164,7 +164,7 @@ export default function GenerateAudioPage() {
                 <select
                   value={voice}
                   onChange={(e) => setVoice(e.target.value)}
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 >
                   <option value="default">Default (Female)</option>
                   <option value="male">Male</option>
@@ -181,7 +181,7 @@ export default function GenerateAudioPage() {
                 <select
                   value={provider}
                   onChange={(e) => setProvider(e.target.value)}
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 >
                   <option value="elevenlabs">ElevenLabs</option>
                   <option value="openai">OpenAI TTS</option>
@@ -215,7 +215,7 @@ export default function GenerateAudioPage() {
                   value={musicPrompt}
                   onChange={(e) => setMusicPrompt(e.target.value)}
                   placeholder="Upbeat electronic music with synthesizers..."
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   rows={4}
                   required
                 />
@@ -231,7 +231,7 @@ export default function GenerateAudioPage() {
                   onChange={(e) => setMusicDuration(parseInt(e.target.value))}
                   min="10"
                   max="60"
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 />
               </div>
 
@@ -262,7 +262,7 @@ export default function GenerateAudioPage() {
                   value={soundEffectPrompt}
                   onChange={(e) => setSoundEffectPrompt(e.target.value)}
                   placeholder="Thunder crash, rain, door slam..."
-                  className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                   rows={4}
                   required
                 />
@@ -320,5 +320,6 @@ export default function GenerateAudioPage() {
     </div>
   )
 }
+
 
 

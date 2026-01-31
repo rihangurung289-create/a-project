@@ -23,7 +23,7 @@ export default function Home() {
             <div className="bg-blue-100 dark:bg-blue-900 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
               <Image className="w-8 h-8 text-blue-600 dark:text-blue-400" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Generate Images</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Generate Images</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Create realistic images from text prompts using Stable Diffusion or DALL·E
             </p>
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="bg-purple-100 dark:bg-purple-900 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
               <Video className="w-8 h-8 text-purple-600 dark:text-purple-400" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Generate Videos</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Generate Videos</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Transform text or images into AI-generated videos with Runway or Pika
             </p>
@@ -47,7 +47,7 @@ export default function Home() {
             <div className="bg-green-100 dark:bg-green-900 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
               <Music className="w-8 h-8 text-green-600 dark:text-green-400" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Generate Audio</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Generate Audio</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Create voice, music, and sound effects using advanced AI models
             </p>
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="bg-orange-100 dark:bg-orange-900 w-16 h-16 rounded-lg flex items-center justify-center mb-4">
               <Sparkles className="w-8 h-8 text-orange-600 dark:text-orange-400" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Combine Media</h3>
+            <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Combine Media</h3>
             <p className="text-gray-600 dark:text-gray-300">
               Merge video, voice, and music into a single polished output
             </p>
@@ -69,36 +69,37 @@ export default function Home() {
 
       {/* Features List */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-        <h2 className="text-2xl font-bold mb-6">Features</h2>
+        <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Features</h2>
         <div className="grid md:grid-cols-2 gap-4">
           <div className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
-            <span>Multiple AI models (Stable Diffusion, DALL·E, Runway, Pika)</span>
+            <span className="text-gray-900 dark:text-white">Multiple AI models (Stable Diffusion, DALL·E, Runway, Pika)</span>
           </div>
           <div className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
-            <span>Text-to-speech with multiple voices</span>
+            <span className="text-gray-900 dark:text-white">Text-to-speech with multiple voices</span>
           </div>
           <div className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
-            <span>Prompt enhancement with AI</span>
+            <span className="text-gray-900 dark:text-white">Prompt enhancement with AI</span>
           </div>
           <div className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
-            <span>History and re-generation</span>
+            <span className="text-gray-900 dark:text-white">History and re-generation</span>
           </div>
           <div className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
-            <span>Download in multiple formats</span>
+            <span className="text-gray-900 dark:text-white">Download in multiple formats</span>
           </div>
           <div className="flex items-start">
             <span className="text-green-500 mr-2">✓</span>
-            <span>Mobile-responsive design</span>
+            <span className="text-gray-900 dark:text-white">Mobile-responsive design</span>
           </div>
         </div>
       </div>
     </div>
   )
 }
+
 
 

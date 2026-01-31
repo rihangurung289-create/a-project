@@ -70,7 +70,7 @@ export default function GenerateVideoPage() {
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
                 placeholder="A cinematic scene of..."
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 rows={4}
               />
             </div>
@@ -79,8 +79,8 @@ export default function GenerateVideoPage() {
               <label className="block text-sm font-medium mb-2">
                 Or Upload Image
               </label>
-              <div className="border-2 border-dashed rounded-lg p-6 text-center">
-                <Upload className="w-8 h-8 mx-auto mb-2 text-gray-400" />
+              <div className="border-2 border-dashed border-gray-300 dark:border-gray-600 rounded-lg p-6 text-center bg-gray-50 dark:bg-gray-700/50">
+                <Upload className="w-8 h-8 mx-auto mb-2 text-gray-400 dark:text-gray-500" />
                 <input
                   type="file"
                   accept="image/*"
@@ -90,7 +90,7 @@ export default function GenerateVideoPage() {
                 />
                 <label
                   htmlFor="image-upload"
-                  className="cursor-pointer text-blue-600 hover:text-blue-700"
+                  className="cursor-pointer text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
                   {image ? image.name : 'Click to upload image'}
                 </label>
@@ -107,7 +107,7 @@ export default function GenerateVideoPage() {
                 onChange={(e) => setDuration(parseInt(e.target.value))}
                 min="1"
                 max="10"
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               />
             </div>
 
@@ -118,7 +118,7 @@ export default function GenerateVideoPage() {
               <select
                 value={model}
                 onChange={(e) => setModel(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               >
                 <option value="runway">Runway Gen-2</option>
                 <option value="pika">Pika</option>
@@ -176,5 +176,6 @@ export default function GenerateVideoPage() {
     </div>
   )
 }
+
 
 

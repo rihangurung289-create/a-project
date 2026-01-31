@@ -80,7 +80,7 @@ export default function CombineMediaPage() {
               <select
                 value={videoId}
                 onChange={(e) => setVideoId(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
                 required
               >
                 <option value="">Choose a video...</option>
@@ -99,7 +99,7 @@ export default function CombineMediaPage() {
               <select
                 value={audioId}
                 onChange={(e) => setAudioId(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               >
                 <option value="">None</option>
                 {audios.filter(a => a.voice).map((audio) => (
@@ -117,7 +117,7 @@ export default function CombineMediaPage() {
               <select
                 value={musicId}
                 onChange={(e) => setMusicId(e.target.value)}
-                className="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               >
                 <option value="">None</option>
                 {audios.filter(a => !a.voice).map((audio) => (
@@ -179,5 +179,6 @@ export default function CombineMediaPage() {
     </div>
   )
 }
+
 
 
